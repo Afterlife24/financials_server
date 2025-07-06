@@ -6,6 +6,19 @@ provider:
   region: eu-west-3
   environment:
     MONGO_URI: ${env:MONGO_URI}
+  httpApi:
+    cors: 
+      allowedOrigins:
+        - http://localhost:5174
+      allowedMethods:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+        - OPTIONS
+      allowedHeaders:
+        - Content-Type
+        - Authorization
 
 functions:
   app:
@@ -14,7 +27,6 @@ functions:
       - httpApi:
           path: /{proxy+}
           method: '*'
-          cors: true   
 
 plugins:
   - serverless-offline
