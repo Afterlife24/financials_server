@@ -4,7 +4,7 @@
   "description": "Express backend deployed to AWS Lambda using Serverless Framework",
   "main": "lambda.js",
   "scripts": {
-    "start": "node lambda.js",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "deploy": "serverless deploy",
     "local": "serverless offline start"
@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-serverless-express": "^3.4.0",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",

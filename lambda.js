@@ -1,4 +1,4 @@
-const awsServerlessExpress = require('aws-serverless-express');
+const awsServerlessExpress = require('serverless-http');
 const app = require('./server');
 const server = awsServerlessExpress.createServer(app);
 
