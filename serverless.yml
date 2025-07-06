@@ -9,7 +9,7 @@ provider:
   httpApi:
     cors: 
       allowedOrigins:
-        - http://localhost:5174
+        - https://financials.afterlife.org.in
       allowedMethods:
         - GET
         - POST
