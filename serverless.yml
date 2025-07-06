@@ -11,7 +11,10 @@ functions:
   app:
     handler: lambda.handler
     events:
-      - httpApi: '*'
+      - httpApi:
+          path: /{proxy+}
+          method: '*'
+          cors: true   
 
 plugins:
   - serverless-offline
