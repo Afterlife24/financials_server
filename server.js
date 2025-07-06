@@ -15,7 +15,7 @@ console.log('Middleware setup complete (CORS and bodyParser)');
 
 // MongoDB connection
 console.log('Attempting to connect to MongoDB...');
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect('mongodb+srv://dhanushvardhan6371:Dhanush2002@siri.1blhi3w.mongodb.net/?retryWrites=true&w=majority&appName=siri', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {
